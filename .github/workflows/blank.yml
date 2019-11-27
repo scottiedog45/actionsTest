@@ -14,7 +14,7 @@ jobs:
     - name: Test make docs
       run: pip install mkdocs
     - name: Version
-      run: mkdocs --version
+      run: python -m mkdocs --version
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
