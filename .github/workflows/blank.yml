@@ -15,6 +15,7 @@ jobs:
       run: |
         pip install mkdocs
         python -m mkdocs --version
+        echo ACCOMPLISHED
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
