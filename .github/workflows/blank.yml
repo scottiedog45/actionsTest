@@ -12,7 +12,9 @@ jobs:
     - name: Run a one-line script
       run: echo Hello, world!
 	- name: Test make docs
-	  run: pip install mkdocs
+	  run: |
+		pip install mkdocs
+		mkdocs --version
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
