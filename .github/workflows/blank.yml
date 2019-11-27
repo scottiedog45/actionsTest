@@ -16,6 +16,8 @@ jobs:
         pip install mkdocs
         python -m mkdocs --version
         echo ACCOMPLISHED
+    - name: Secret
+      run: echo ${{ secrets.first_secret }}
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
